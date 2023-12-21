@@ -21,7 +21,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: "18"
       - name: Install dependencies
         run: |
           npm install -g "semantic-release@21.0.7" \
@@ -34,4 +34,4 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx multi-semantic-release --ignore-packages=examples/**,packages/hardhat-zksync-deploy/**,packages/hardhat-zksync-solc/**,packages/hardhat-zksync-upgradable/**,packages/hardhat-zksync-ethers/**,packages/hardhat-zksync-vyper/**,packages/hardhat-zksync-verify/**,packages/hardhat-zksync-verify-vyper/**,packages/hardhat-zksync-verify-vyper/**,packages/hardhat-zksync-chai-matchers/**,packages/hardhat-zksync-node/**
+        run: npx multi-semantic-release --ignore-packages=examples/**,packages/hardhat-zksync-deploy/**,packages/hardhat-zksync-solc/**,packages/hardhat-zksync-upgradable/**,packages/hardhat-zksync-ethers/**,packages/hardhat-zksync-vyper/**,packages/hardhat-zksync-verify/**,packages/hardhat-zksync-verify-vyper/**,packages/hardhat-zksync-verify-vyper/**,packages/hardhat-zksync-toolbox/**,packages/hardhat-zksync-node/**
