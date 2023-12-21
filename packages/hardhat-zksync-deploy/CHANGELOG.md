@@ -1,5 +1,19 @@
 # @matterlabs/hardhat-zksync-deploy
 
+## [0.6.6](https://github.com/kiriyaga/test-worklows/compare/@matterlabs/hardhat-zksync-deploy-v0.6.5...@matterlabs/hardhat-zksync-deploy-v0.6.6) (2023-12-21)
+
+
+### Features
+
+* update plugin name ([a7eeae3](https://github.com/kiriyaga/test-worklows/commit/a7eeae398879088627138af12a3655a56b13da1d))
+
+
+### Bug Fixes
+
+* changed error message on deploy ([6f204fa](https://github.com/kiriyaga/test-worklows/commit/6f204faf82ca7a690698fbaa143277a5188e6c46))
+* changed error message on deploy v2 ([4c309b6](https://github.com/kiriyaga/test-worklows/commit/4c309b605ee4f87271d73dc35a6f5888f302cdd4))
+* improve typing ([c77c465](https://github.com/kiriyaga/test-worklows/commit/c77c4654dcf025c47783518a4453d5e9317ab0ca))
+
 ## [1.1.3](https://github.com/kiriyaga/test-worklows/compare/@matterlabs/hardhat-zksync-deploy-v1.1.2...@matterlabs/hardhat-zksync-deploy-v1.1.3) (2023-12-21)
 
 
