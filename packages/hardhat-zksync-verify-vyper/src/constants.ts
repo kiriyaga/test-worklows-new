@@ -2,7 +2,7 @@ export const PLUGIN_NAME = '@matterlabs/hardhat-zksync-verify-vyper';
 
 export const TESTNET_VERIFY_URL = 'https://explorer.sepolia.era.zksync.dev/contract_verification';
 
-export const TASK_COMPILE_VYPER = "compile:vyper";
+export const TASK_COMPILE_VYPER = "compile:vyperee";
 
 export const TASK_VERIFY_VYPER = 'verify:vyper';
 export const TASK_CHECK_VERIFICATION_STATUS = 'verify-status:vyper';
