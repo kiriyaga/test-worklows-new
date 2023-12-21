@@ -12,7 +12,7 @@
     [
       "@semantic-release/changelog",
       {
-        "changelogFile": "CHANGELOG.md"
+        "changelogFile": "packages/hardhat-zksync-chai-matchers/CHANGELOG.md"
       }
     ],
     [
@@ -24,7 +24,7 @@
     [
       "@semantic-release/git",
       {
-        "assets": ["CHANGELOG.md", "package.json"],
+        "assets": ["packages/hardhat-zksync-chai-matchers/CHANGELOG.md", "packages/hardhat-zksync-chai-matchers/package.json"],
         "message": "${nextRelease.version} version bump [skip ci]\n\n${nextRelease.notes}"
       }
     ],
