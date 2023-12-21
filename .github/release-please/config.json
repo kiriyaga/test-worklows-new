@@ -6,43 +6,43 @@
     "bump-patch-for-minor-pre-major": true,
     "packages": {
         "packages/hardhat-zksync-deploy": {
-            "release-type": "simple",
+            "release-type": "node",
             "component": "@matterlabs/hardhat-zksync-deploy"
         },
         "packages/hardhat-zksync-solc": {
-            "release-type": "simple",
+            "release-type": "node",
             "component": "@matterlabs/hardhat-zksync-solc"
         },
         "packages/hardhat-zksync-upgradable": {
-            "release-type": "simple",
+            "release-type": "node",
             "component": "@matterlabs/hardhat-zksync-upgradable"
         },
         "packages/hardhat-zksync-ethers": {
-            "release-type": "simple",
+            "release-type": "node",
             "component": "@matterlabs/hardhat-zksync-ethers"
         },
         "packages/hardhat-zksync-vyper": {
-            "release-type": "simple",
+            "release-type": "node",
             "component": "@matterlabs/hardhat-zksync-vyper"
         },
         "packages/hardhat-zksync-verify": {
-            "release-type": "simple",
+            "release-type": "node",
             "component": "@matterlabs/hardhat-zksync-verify"
         },
         "packages/hardhat-zksync-verify-vyper": {
-            "release-type": "simple",
+            "release-type": "node",
             "component": "@matterlabs/hardhat-zksync-verify-vyper"
         },
         "packages/hardhat-zksync-toolbox": {
-            "release-type": "simple",
+            "release-type": "node",
             "component": "@matterlabs/hardhat-zksync-toolbox"
         },
         "packages/hardhat-zksync-node": {
-            "release-type": "simple",
+            "release-type": "node",
             "component": "@matterlabs/hardhat-zksync-node"
         },
         "packages/hardhat-zksync-chai-matchers": {
-            "release-type": "simple",
+            "release-type": "node",
             "component": "@matterlabs/hardhat-zksync-chai-matchers"
         }
     }
