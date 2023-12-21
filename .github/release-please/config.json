@@ -1,0 +1,45 @@
+{
+    "separate-pull-requests": true,
+    "group-pull-request-title-pattern": "chore(${component}): release at branch ${branch}",
+    "bootstrap-sha": "691a7008f6d1f88fb9a5b6b8d92592e1199f37ea",
+    "bump-minor-pre-major": true,
+    "bump-patch-for-minor-pre-major": true,
+    "packages": {
+        "packages/hardhat-zksync-deploy": {
+            "release-type": "simple",
+            "component": "hardhat-zksync-deploy"
+        },
+        "packages/hardhat-zksync-solc": {
+            "release-type": "simple",
+            "component": "hardhat-zksync-solc"
+        },
+        "packages/hardhat-zksync-upgradable": {
+            "release-type": "simple",
+            "component": "hardhat-zksync-upgradable"
+        },
+        "packages/hardhat-zksync-ethers": {
+            "release-type": "simple",
+            "component": "hardhat-zksync-ethers"
+        },
+        "packages/hardhat-zksync-vyper": {
+            "release-type": "simple",
+            "component": "hardhat-zksync-vyper"
+        },
+        "packages/hardhat-zksync-verify": {
+            "release-type": "simple",
+            "component": "hardhat-zksync-verify"
+        },
+        "packages/hardhat-zksync-verify-vyper": {
+            "release-type": "simple",
+            "component": "hardhat-zksync-verify-vyper"
+        },
+        "packages/hardhat-zksync-toolbox": {
+            "release-type": "simple",
+            "component": "hardhat-zksync-toolbox"
+        },
+        "packages/hardhat-zksync-node": {
+            "release-type": "simple",
+            "component": "hardhat-zksync-node"
+        }
+    }
+}
