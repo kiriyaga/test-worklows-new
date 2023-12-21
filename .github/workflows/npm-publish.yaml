@@ -2,7 +2,7 @@ name: Publish packages to npm
 
 on:
   workflow_dispatch:
-    inputs:
+    inputs: 
       tag:
         required: true
         type: choice
@@ -49,7 +49,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_NPM_MATTERLABS_AUTOMATION_TOKEN }}
         run: |
-          npm publish @matterlabs/${{input.package}} --tag ${{ inputs.tag }} --workspace=packages/${{input.package}} --access=public
+          npm publish @matterlabs/${{inputs.package}} --tag ${{ inputs.tag }} --workspace=packages/${{inputs.package}} --access=public
 
       - name: Create the MM Message
         env:
