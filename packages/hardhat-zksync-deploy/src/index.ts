@@ -12,7 +12,7 @@ extendEnvironment((hre: HardhatRuntimeEnvironment) => {
     hre.network.zksync = hre.network.config.zksync ?? false;
 });
 
-task(TASK_DEPLOY_ZKSYNC, 'Rns the deploy scripts for zkSync network')
+task(TASK_DEPLOY_ZKSYNC, 'Runs the deploy scripts for zkSync network')
     .addParam('script', 'A certain deploy script to be launched', '')
     .setAction(zkSyncDeploy);
 
