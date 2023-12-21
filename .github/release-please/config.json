@@ -17,10 +17,6 @@
             "release-type": "node",
             "component": "@matterlabs/hardhat-zksync-upgradable"
         },
-        "packages/hardhat-zksync-ethers": {
-            "release-type": "node",
-            "component": "@matterlabs/hardhat-zksync-ethers"
-        },
         "packages/hardhat-zksync-vyper": {
             "release-type": "node",
             "component": "@matterlabs/hardhat-zksync-vyper"
@@ -28,10 +24,6 @@
         "packages/hardhat-zksync-verify": {
             "release-type": "node",
             "component": "@matterlabs/hardhat-zksync-verify"
-        },
-        "packages/hardhat-zksync-verify-vyper": {
-            "release-type": "node",
-            "component": "@matterlabs/hardhat-zksync-verify-vyper"
         },
         "packages/hardhat-zksync-toolbox": {
             "release-type": "node",
