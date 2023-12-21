@@ -16,12 +16,6 @@
       }
     ],
     [
-      "@semantic-release/npm",
-      {
-        "npmPublish": false
-      }
-    ],
-    [
       "@semantic-release/git",
       {
         "assets": ["packages/hardhat-zksync-chai-matchers/CHANGELOG.md", "packages/hardhat-zksync-chai-matchers/package.json"],
