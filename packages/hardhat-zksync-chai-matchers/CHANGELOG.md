@@ -1,5 +1,18 @@
 # @matterlabs/hardhat-zksync-chai-matchers
 
+## 1.0.0 (2023-12-21)
+
+
+### Features
+
+* **hardhat-zksync-chai-matchers:** new plugin version ([ea47d57](https://github.com/kiriyaga/test-worklows/commit/ea47d575ddf0bf051d6a1ab60b0dffa7a325f3bb))
+* **hardhat-zksync-chai-matchers:** new plugin version v4 ([fcd2559](https://github.com/kiriyaga/test-worklows/commit/fcd2559e20ffbaef2ac3cf6629c1f2f7c6fe77c3))
+
+
+### Bug Fixes
+
+* **hardhat-zksync-chai-matchers:** fix for plugin error ([3e7dd11](https://github.com/kiriyaga/test-worklows/commit/3e7dd11fe0a29ca7ba097a23f0097d344e156308))
+
 ## 1.2.0
 
 ### Minor Changes
