@@ -7,39 +7,43 @@
     "packages": {
         "packages/hardhat-zksync-deploy": {
             "release-type": "simple",
-            "component": "hardhat-zksync-deploy"
+            "component": "@matterlabs/hardhat-zksync-deploy"
         },
         "packages/hardhat-zksync-solc": {
             "release-type": "simple",
-            "component": "hardhat-zksync-solc"
+            "component": "@matterlabs/hardhat-zksync-solc"
         },
         "packages/hardhat-zksync-upgradable": {
             "release-type": "simple",
-            "component": "hardhat-zksync-upgradable"
+            "component": "@matterlabs/hardhat-zksync-upgradable"
         },
         "packages/hardhat-zksync-ethers": {
             "release-type": "simple",
-            "component": "hardhat-zksync-ethers"
+            "component": "@matterlabs/hardhat-zksync-ethers"
         },
         "packages/hardhat-zksync-vyper": {
             "release-type": "simple",
-            "component": "hardhat-zksync-vyper"
+            "component": "@matterlabs/hardhat-zksync-vyper"
         },
         "packages/hardhat-zksync-verify": {
             "release-type": "simple",
-            "component": "hardhat-zksync-verify"
+            "component": "@matterlabs/hardhat-zksync-verify"
         },
         "packages/hardhat-zksync-verify-vyper": {
             "release-type": "simple",
-            "component": "hardhat-zksync-verify-vyper"
+            "component": "@matterlabs/hardhat-zksync-verify-vyper"
         },
         "packages/hardhat-zksync-toolbox": {
             "release-type": "simple",
-            "component": "hardhat-zksync-toolbox"
+            "component": "@matterlabs/hardhat-zksync-toolbox"
         },
         "packages/hardhat-zksync-node": {
             "release-type": "simple",
-            "component": "hardhat-zksync-node"
+            "component": "@matterlabs/hardhat-zksync-node"
+        },
+        "packages/hardhat-zksync-chai-matchers": {
+            "release-type": "simple",
+            "component": "@matterlabs/hardhat-zksync-chai-matchers"
         }
     }
 }
