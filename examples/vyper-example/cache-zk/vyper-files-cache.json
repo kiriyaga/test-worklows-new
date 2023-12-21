@@ -1,0 +1,29 @@
+{
+  "_format": "hh-vy-cache-1",
+  "files": {
+    "/home/kiriyaga/txFusion/hardhat-zksync/examples/vyper-example/contracts/CreateForwarder.vy": {
+      "lastModificationDate": 1691678909736,
+      "contentHash": "a6bc92d5ce5a4ffcfafca634c907995b",
+      "sourceName": "contracts/CreateForwarder.vy",
+      "vyperConfig": {
+        "version": "0.3.3"
+      },
+      "versionPragma": "^0.3.3",
+      "artifacts": [
+        "CreateForwarder"
+      ]
+    },
+    "/home/kiriyaga/txFusion/hardhat-zksync/examples/vyper-example/contracts/Greeter.vy": {
+      "lastModificationDate": 1691678909736,
+      "contentHash": "6b61c2b2665cb92fd47baf2353b5e21a",
+      "sourceName": "contracts/Greeter.vy",
+      "vyperConfig": {
+        "version": "0.3.3"
+      },
+      "versionPragma": "^0.3.3",
+      "artifacts": [
+        "Greeter"
+      ]
+    }
+  }
+}

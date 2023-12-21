@@ -1,0 +1,177 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x4768d649Da9927a8b3842108117eC0ca7Bc6953f",
+    "txHash": "0x5e3c34781a0f6c0677f21a641f40dcc93710c6670359ec2c2cece103939b4aa0"
+  },
+  "proxies": [
+    {
+      "address": "0x22F4D93be0E8C0C081e74c0d5e697B64eEA007FF",
+      "txHash": "0xadd8e7ac20af04c11a71f32ceea44f52a32806102cfb1e9aea7f588fb8aafe45",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x97b985951FD3e0C1d996421CC783d46c12d00082",
+      "txHash": "0x3ef4f5202e99b809adb245610bf1863b98c0ceccef01dcec974a1dbb0e947c89",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "686b73c1388be8b9184c1f31c346ecd96889140ccfe4b4ad9a92575d562557d6": {
+      "address": "0x8a7E4b12Fb1914d91A84fe66e7B0e899DE291167",
+      "txHash": "0x6112aa8ccf46a8caba9e9cd36f2e393a4c7fafa5614f02171dbb1688749871f3",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "value",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "Box",
+            "src": "contracts/Box.sol:8"
+          },
+          {
+            "label": "secondValue",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "Box",
+            "src": "contracts/Box.sol:9"
+          },
+          {
+            "label": "thirdValue",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256",
+            "contract": "Box",
+            "src": "contracts/Box.sol:10"
+          },
+          {
+            "label": "fourthValue",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "Box",
+            "src": "contracts/Box.sol:11"
+          },
+          {
+            "label": "fifthValue",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256",
+            "contract": "Box",
+            "src": "contracts/Box.sol:12"
+          }
+        ],
+        "types": {
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "6306c7e71e9cd4b18fe4134b9b453cf5895f7afd13a635398d45899c5da4d5dc": {
+      "address": "0xe4C7fBB0a626ed208021ccabA6Be1566905E2dFc",
+      "txHash": "0xe024ea5adaa79d12a685592564291a342ba0b07deba66d89c32534057adf9936",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "value",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "BoxWithStorageGap",
+            "src": "contracts/BoxWithStorageGap.sol:8"
+          },
+          {
+            "label": "secondValue",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "BoxWithStorageGap",
+            "src": "contracts/BoxWithStorageGap.sol:9"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_array(t_uint256)10_storage",
+            "contract": "BoxWithStorageGap",
+            "src": "contracts/BoxWithStorageGap.sol:10"
+          },
+          {
+            "label": "thirdValue",
+            "offset": 0,
+            "slot": "13",
+            "type": "t_uint256",
+            "contract": "BoxWithStorageGap",
+            "src": "contracts/BoxWithStorageGap.sol:11"
+          }
+        ],
+        "types": {
+          "t_array(t_uint256)10_storage": {
+            "label": "uint256[10]",
+            "numberOfBytes": "320"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}

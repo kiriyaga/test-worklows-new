@@ -1,0 +1,29 @@
+{
+  "_format": "hh-vy-cache-1",
+  "files": {
+    "/home/kiriyaga/txFusion/hardhat-zksync/examples/mixed-example/contracts/Auction.vy": {
+      "lastModificationDate": 1691678909736,
+      "contentHash": "1aa859f05fa9c2e7ec492f835821f3bb",
+      "sourceName": "contracts/Auction.vy",
+      "vyperConfig": {
+        "version": "0.3.3"
+      },
+      "versionPragma": "*",
+      "artifacts": [
+        "Auction"
+      ]
+    },
+    "/home/kiriyaga/txFusion/hardhat-zksync/examples/mixed-example/contracts/Voting.v.py": {
+      "lastModificationDate": 1691678909736,
+      "contentHash": "a68680892af8ae7679add46595d80849",
+      "sourceName": "contracts/Voting.v.py",
+      "vyperConfig": {
+        "version": "0.3.3"
+      },
+      "versionPragma": "*",
+      "artifacts": [
+        "Voting"
+      ]
+    }
+  }
+}

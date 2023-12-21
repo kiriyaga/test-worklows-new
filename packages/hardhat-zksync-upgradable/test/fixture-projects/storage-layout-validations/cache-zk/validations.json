@@ -1,0 +1,4540 @@
+{
+  "version": "3.4",
+  "log": [
+    {
+      "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable": {
+        "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:58",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:AddressUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:9",
+        "version": {
+          "withMetadata": "cfe9501e4c903282672bbe1f4ade4e3453a994baa1528a48745e1385c4eeaec9",
+          "withoutMetadata": "cfe9501e4c903282672bbe1f4ade4e3453a994baa1528a48745e1385c4eeaec9",
+          "linkedWithoutMetadata": "cfe9501e4c903282672bbe1f4ade4e3453a994baa1528a48745e1385c4eeaec9"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/access/Ownable.sol:Ownable": {
+        "src": "@openzeppelin/contracts/access/Ownable.sol:20",
+        "inherit": [
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:28"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967": {
+        "src": "@openzeppelin/contracts/interfaces/IERC1967.sol:11",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/interfaces/draft-IERC1822.sol:IERC1822Proxiable": {
+        "src": "@openzeppelin/contracts/interfaces/draft-IERC1822.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "proxiableUUID()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:ERC1967Proxy": {
+        "src": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:15",
+        "version": {
+          "withMetadata": "6f49061a6e298e7a50cac256d51dfcc6b617ffa4a35d8edac3df27d7bcb11c8b",
+          "withoutMetadata": "6f49061a6e298e7a50cac256d51dfcc6b617ffa4a35d8edac3df27d7bcb11c8b",
+          "linkedWithoutMetadata": "6f49061a6e298e7a50cac256d51dfcc6b617ffa4a35d8edac3df27d7bcb11c8b"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:ERC1967Upgrade",
+          "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967",
+          "@openzeppelin/contracts/proxy/Proxy.sol:Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC1967Proxy",
+            "src": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:22"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:ERC1967Upgrade": {
+        "src": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:18",
+        "inherit": [
+          "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/Proxy.sol:Proxy": {
+        "src": "@openzeppelin/contracts/proxy/Proxy.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/beacon/BeaconProxy.sol:BeaconProxy": {
+        "src": "@openzeppelin/contracts/proxy/beacon/BeaconProxy.sol:18",
+        "version": {
+          "withMetadata": "f97a11faac662b7f54ff0806b84688f03fbfefb829f6ac5d7b8cb80c79957da6",
+          "withoutMetadata": "f97a11faac662b7f54ff0806b84688f03fbfefb829f6ac5d7b8cb80c79957da6",
+          "linkedWithoutMetadata": "f97a11faac662b7f54ff0806b84688f03fbfefb829f6ac5d7b8cb80c79957da6"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:ERC1967Upgrade",
+          "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967",
+          "@openzeppelin/contracts/proxy/Proxy.sol:Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "BeaconProxy",
+            "src": "@openzeppelin/contracts/proxy/beacon/BeaconProxy.sol:30"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/beacon/IBeacon.sol:IBeacon": {
+        "src": "@openzeppelin/contracts/proxy/beacon/IBeacon.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "implementation()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol:UpgradeableBeacon": {
+        "src": "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol:16",
+        "version": {
+          "withMetadata": "2fc4766c316f082df8bf402b9993c549fde824a24ad60770452b38bbb4546f4f",
+          "withoutMetadata": "2fc4766c316f082df8bf402b9993c549fde824a24ad60770452b38bbb4546f4f",
+          "linkedWithoutMetadata": "2fc4766c316f082df8bf402b9993c549fde824a24ad60770452b38bbb4546f4f"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context",
+          "@openzeppelin/contracts/proxy/beacon/IBeacon.sol:IBeacon"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address)",
+          "implementation()",
+          "upgradeTo(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "UpgradeableBeacon",
+            "src": "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol:28"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            },
+            {
+              "label": "_implementation",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_address",
+              "contract": "UpgradeableBeacon",
+              "src": "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol:17"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol:ProxyAdmin": {
+        "src": "@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol:13",
+        "version": {
+          "withMetadata": "d67649e634521c0993439fca6b1a155428383f99a362c70c97b3b9453a4cfd42",
+          "withoutMetadata": "d67649e634521c0993439fca6b1a155428383f99a362c70c97b3b9453a4cfd42",
+          "linkedWithoutMetadata": "d67649e634521c0993439fca6b1a155428383f99a362c70c97b3b9453a4cfd42"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "getProxyImplementation(address)",
+          "getProxyAdmin(address)",
+          "changeProxyAdmin(address,address)",
+          "upgrade(address,address)",
+          "upgradeAndCall(address,address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:ITransparentUpgradeableProxy": {
+        "src": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:14",
+        "inherit": [
+          "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967"
+        ],
+        "libraries": [],
+        "methods": [
+          "admin()",
+          "implementation()",
+          "changeAdmin(address)",
+          "upgradeTo(address)",
+          "upgradeToAndCall(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:TransparentUpgradeableProxy": {
+        "src": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:58",
+        "version": {
+          "withMetadata": "04953d34fe463406e4538a7b1749119090efbc1309a0f91c62777761a5a9a9c1",
+          "withoutMetadata": "04953d34fe463406e4538a7b1749119090efbc1309a0f91c62777761a5a9a9c1",
+          "linkedWithoutMetadata": "04953d34fe463406e4538a7b1749119090efbc1309a0f91c62777761a5a9a9c1"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:ERC1967Proxy",
+          "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:ERC1967Upgrade",
+          "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967",
+          "@openzeppelin/contracts/proxy/Proxy.sol:Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "TransparentUpgradeableProxy",
+            "src": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:63"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/Address.sol:Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:9",
+        "version": {
+          "withMetadata": "5e5567ce13e050c7138e4e8f7246cc353c7c832ce61ef70fe36ea49a5741e4f4",
+          "withoutMetadata": "5e5567ce13e050c7138e4e8f7246cc353c7c832ce61ef70fe36ea49a5741e4f4",
+          "linkedWithoutMetadata": "5e5567ce13e050c7138e4e8f7246cc353c7c832ce61ef70fe36ea49a5741e4f4"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/Context.sol:Context": {
+        "src": "@openzeppelin/contracts/utils/Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot": {
+        "src": "@openzeppelin/contracts/utils/StorageSlot.sol:34",
+        "version": {
+          "withMetadata": "915a66d8d3c90666f6f1ed26c4954e14860e282b2226226a1d2c1c13c541ba21",
+          "withoutMetadata": "915a66d8d3c90666f6f1ed26c4954e14860e282b2226226a1d2c1c13c541ba21",
+          "linkedWithoutMetadata": "915a66d8d3c90666f6f1ed26c4954e14860e282b2226226a1d2c1c13c541ba21"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/Box.sol:Box": {
+        "src": "contracts/Box.sol:7",
+        "version": {
+          "withMetadata": "79192124fe49268959653970244938fb662526b561b416370244a01db2de6d11",
+          "withoutMetadata": "79192124fe49268959653970244938fb662526b561b416370244a01db2de6d11",
+          "linkedWithoutMetadata": "79192124fe49268959653970244938fb662526b561b416370244a01db2de6d11"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "retrieve()",
+          "store(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:8"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:9"
+            },
+            {
+              "label": "thirdValue",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:10"
+            },
+            {
+              "label": "fourthValue",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:11"
+            },
+            {
+              "label": "fifthValue",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:12"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/BoxV2.sol:BoxV2": {
+        "src": "contracts/BoxV2.sol:7",
+        "version": {
+          "withMetadata": "5a492c4a89e8446cccb82f1a124e4d72f7ac6eed69ff43147382ef4e9fb790af",
+          "withoutMetadata": "5a492c4a89e8446cccb82f1a124e4d72f7ac6eed69ff43147382ef4e9fb790af",
+          "linkedWithoutMetadata": "5a492c4a89e8446cccb82f1a124e4d72f7ac6eed69ff43147382ef4e9fb790af"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:8"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:9"
+            },
+            {
+              "label": "thirdValue",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:10"
+            },
+            {
+              "label": "fourthValue",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:11"
+            },
+            {
+              "label": "fifthValue",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:12"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/BoxV2Invalid.sol:BoxV2Invalid": {
+        "src": "contracts/BoxV2Invalid.sol:7",
+        "version": {
+          "withMetadata": "99e88007a727cc6a2eba229f2fdc8b410df4e1eb839dec05ffbee23a590423fe",
+          "withoutMetadata": "99e88007a727cc6a2eba229f2fdc8b410df4e1eb839dec05ffbee23a590423fe",
+          "linkedWithoutMetadata": "99e88007a727cc6a2eba229f2fdc8b410df4e1eb839dec05ffbee23a590423fe"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "insertedValue",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "BoxV2Invalid",
+              "src": "contracts/BoxV2Invalid.sol:8"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "BoxV2Invalid",
+              "src": "contracts/BoxV2Invalid.sol:9"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_string_storage",
+              "contract": "BoxV2Invalid",
+              "src": "contracts/BoxV2Invalid.sol:10"
+            },
+            {
+              "label": "renamedValue",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "BoxV2Invalid",
+              "src": "contracts/BoxV2Invalid.sol:11"
+            },
+            {
+              "label": "fourthValue",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "BoxV2Invalid",
+              "src": "contracts/BoxV2Invalid.sol:12"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/BoxWithStorageGap.sol:BoxWithStorageGap": {
+        "src": "contracts/BoxWithStorageGap.sol:7",
+        "version": {
+          "withMetadata": "d6206b1f8b46ad2dd0e52c982f7c7641b2269a418e1738e534f00da13a9dd613",
+          "withoutMetadata": "d6206b1f8b46ad2dd0e52c982f7c7641b2269a418e1738e534f00da13a9dd613",
+          "linkedWithoutMetadata": "d6206b1f8b46ad2dd0e52c982f7c7641b2269a418e1738e534f00da13a9dd613"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "retrieve()",
+          "store(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGap",
+              "src": "contracts/BoxWithStorageGap.sol:8"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGap",
+              "src": "contracts/BoxWithStorageGap.sol:9"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_array(t_uint256)10_storage",
+              "contract": "BoxWithStorageGap",
+              "src": "contracts/BoxWithStorageGap.sol:10"
+            },
+            {
+              "label": "thirdValue",
+              "offset": 0,
+              "slot": "13",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGap",
+              "src": "contracts/BoxWithStorageGap.sol:11"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)10_storage": {
+              "label": "uint256[10]",
+              "numberOfBytes": "320"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/BoxWithStorageGapV2.sol:BoxWithStorageGapV2": {
+        "src": "contracts/BoxWithStorageGapV2.sol:7",
+        "version": {
+          "withMetadata": "2a76a41885b7937291621da69664fec26a34ccf7ae1501e3d81eaa9523c731bd",
+          "withoutMetadata": "2a76a41885b7937291621da69664fec26a34ccf7ae1501e3d81eaa9523c731bd",
+          "linkedWithoutMetadata": "2a76a41885b7937291621da69664fec26a34ccf7ae1501e3d81eaa9523c731bd"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2",
+              "src": "contracts/BoxWithStorageGapV2.sol:8"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2",
+              "src": "contracts/BoxWithStorageGapV2.sol:9"
+            },
+            {
+              "label": "newAddress",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_address",
+              "contract": "BoxWithStorageGapV2",
+              "src": "contracts/BoxWithStorageGapV2.sol:10"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_array(t_uint256)9_storage",
+              "contract": "BoxWithStorageGapV2",
+              "src": "contracts/BoxWithStorageGapV2.sol:11"
+            },
+            {
+              "label": "thirdValue",
+              "offset": 0,
+              "slot": "13",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2",
+              "src": "contracts/BoxWithStorageGapV2.sol:12"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)9_storage": {
+              "label": "uint256[9]",
+              "numberOfBytes": "288"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/BoxWithStorageGapV2Invalid.sol:BoxWithStorageGapV2Invalid": {
+        "src": "contracts/BoxWithStorageGapV2Invalid.sol:7",
+        "version": {
+          "withMetadata": "2e532292abf4f75e4a64489a5552ce569ff747a55e76c0bd66208167cbb310aa",
+          "withoutMetadata": "2e532292abf4f75e4a64489a5552ce569ff747a55e76c0bd66208167cbb310aa",
+          "linkedWithoutMetadata": "2e532292abf4f75e4a64489a5552ce569ff747a55e76c0bd66208167cbb310aa"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2Invalid",
+              "src": "contracts/BoxWithStorageGapV2Invalid.sol:8"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2Invalid",
+              "src": "contracts/BoxWithStorageGapV2Invalid.sol:9"
+            },
+            {
+              "label": "newAddress",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_address",
+              "contract": "BoxWithStorageGapV2Invalid",
+              "src": "contracts/BoxWithStorageGapV2Invalid.sol:10"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_array(t_uint256)10_storage",
+              "contract": "BoxWithStorageGapV2Invalid",
+              "src": "contracts/BoxWithStorageGapV2Invalid.sol:11"
+            },
+            {
+              "label": "thirdValue",
+              "offset": 0,
+              "slot": "14",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2Invalid",
+              "src": "contracts/BoxWithStorageGapV2Invalid.sol:12"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)10_storage": {
+              "label": "uint256[10]",
+              "numberOfBytes": "320"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable": {
+        "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:58",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:AddressUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:9",
+        "version": {
+          "withMetadata": "0acae369f92fdfc2e1a5587574bc54b3c88fa0e41c8b34db8b6f367479087ddd",
+          "withoutMetadata": "0acae369f92fdfc2e1a5587574bc54b3c88fa0e41c8b34db8b6f367479087ddd",
+          "linkedWithoutMetadata": "0acae369f92fdfc2e1a5587574bc54b3c88fa0e41c8b34db8b6f367479087ddd"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/access/Ownable.sol:Ownable": {
+        "src": "@openzeppelin/contracts/access/Ownable.sol:20",
+        "inherit": [
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:28"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967": {
+        "src": "@openzeppelin/contracts/interfaces/IERC1967.sol:11",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/interfaces/draft-IERC1822.sol:IERC1822Proxiable": {
+        "src": "@openzeppelin/contracts/interfaces/draft-IERC1822.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "proxiableUUID()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:ERC1967Proxy": {
+        "src": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:15",
+        "version": {
+          "withMetadata": "011bf348afcf0b52397aa6da03005e5adcd08fd0506d0a319b83d879dfec7dcc",
+          "withoutMetadata": "011bf348afcf0b52397aa6da03005e5adcd08fd0506d0a319b83d879dfec7dcc",
+          "linkedWithoutMetadata": "011bf348afcf0b52397aa6da03005e5adcd08fd0506d0a319b83d879dfec7dcc"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:ERC1967Upgrade",
+          "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967",
+          "@openzeppelin/contracts/proxy/Proxy.sol:Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC1967Proxy",
+            "src": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:22"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:ERC1967Upgrade": {
+        "src": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:18",
+        "inherit": [
+          "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/Proxy.sol:Proxy": {
+        "src": "@openzeppelin/contracts/proxy/Proxy.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/beacon/BeaconProxy.sol:BeaconProxy": {
+        "src": "@openzeppelin/contracts/proxy/beacon/BeaconProxy.sol:18",
+        "version": {
+          "withMetadata": "de86acb0a27235f50979e184f74dd7a8da9fa8ff06f8f5ee7b8cdead090591ea",
+          "withoutMetadata": "de86acb0a27235f50979e184f74dd7a8da9fa8ff06f8f5ee7b8cdead090591ea",
+          "linkedWithoutMetadata": "de86acb0a27235f50979e184f74dd7a8da9fa8ff06f8f5ee7b8cdead090591ea"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:ERC1967Upgrade",
+          "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967",
+          "@openzeppelin/contracts/proxy/Proxy.sol:Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "BeaconProxy",
+            "src": "@openzeppelin/contracts/proxy/beacon/BeaconProxy.sol:30"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/beacon/IBeacon.sol:IBeacon": {
+        "src": "@openzeppelin/contracts/proxy/beacon/IBeacon.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "implementation()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol:UpgradeableBeacon": {
+        "src": "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol:16",
+        "version": {
+          "withMetadata": "effb9a487bedd5bc2354e4a78e269936ecae61125583bde5950421cbdcaad084",
+          "withoutMetadata": "effb9a487bedd5bc2354e4a78e269936ecae61125583bde5950421cbdcaad084",
+          "linkedWithoutMetadata": "effb9a487bedd5bc2354e4a78e269936ecae61125583bde5950421cbdcaad084"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context",
+          "@openzeppelin/contracts/proxy/beacon/IBeacon.sol:IBeacon"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address)",
+          "implementation()",
+          "upgradeTo(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "UpgradeableBeacon",
+            "src": "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol:28"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            },
+            {
+              "label": "_implementation",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_address",
+              "contract": "UpgradeableBeacon",
+              "src": "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol:17"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol:ProxyAdmin": {
+        "src": "@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol:13",
+        "version": {
+          "withMetadata": "8b6bf01ed397d9d8968606439fbe3cd16cff27ce74ffda517cecdb060e0b2b8a",
+          "withoutMetadata": "8b6bf01ed397d9d8968606439fbe3cd16cff27ce74ffda517cecdb060e0b2b8a",
+          "linkedWithoutMetadata": "8b6bf01ed397d9d8968606439fbe3cd16cff27ce74ffda517cecdb060e0b2b8a"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "getProxyImplementation(address)",
+          "getProxyAdmin(address)",
+          "changeProxyAdmin(address,address)",
+          "upgrade(address,address)",
+          "upgradeAndCall(address,address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:ITransparentUpgradeableProxy": {
+        "src": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:14",
+        "inherit": [
+          "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967"
+        ],
+        "libraries": [],
+        "methods": [
+          "admin()",
+          "implementation()",
+          "changeAdmin(address)",
+          "upgradeTo(address)",
+          "upgradeToAndCall(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:TransparentUpgradeableProxy": {
+        "src": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:58",
+        "version": {
+          "withMetadata": "34841399f768251d980c6cab82c0cd07b980c46292a3d2a0951f32d265b7cb60",
+          "withoutMetadata": "34841399f768251d980c6cab82c0cd07b980c46292a3d2a0951f32d265b7cb60",
+          "linkedWithoutMetadata": "34841399f768251d980c6cab82c0cd07b980c46292a3d2a0951f32d265b7cb60"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:ERC1967Proxy",
+          "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:ERC1967Upgrade",
+          "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967",
+          "@openzeppelin/contracts/proxy/Proxy.sol:Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "TransparentUpgradeableProxy",
+            "src": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:63"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/Address.sol:Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:9",
+        "version": {
+          "withMetadata": "3efe2c83295732a219c538e333a3794354ee1e4841fabf31bd2f16c53ea9268c",
+          "withoutMetadata": "3efe2c83295732a219c538e333a3794354ee1e4841fabf31bd2f16c53ea9268c",
+          "linkedWithoutMetadata": "3efe2c83295732a219c538e333a3794354ee1e4841fabf31bd2f16c53ea9268c"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/Context.sol:Context": {
+        "src": "@openzeppelin/contracts/utils/Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot": {
+        "src": "@openzeppelin/contracts/utils/StorageSlot.sol:34",
+        "version": {
+          "withMetadata": "eacaff9e36f6be7810bc8c09cb910d4068f6b7050502791a7b8e657620fe5026",
+          "withoutMetadata": "eacaff9e36f6be7810bc8c09cb910d4068f6b7050502791a7b8e657620fe5026",
+          "linkedWithoutMetadata": "eacaff9e36f6be7810bc8c09cb910d4068f6b7050502791a7b8e657620fe5026"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/Box.sol:Box": {
+        "src": "contracts/Box.sol:7",
+        "version": {
+          "withMetadata": "7f6502b635c352d2abd65c082efff3f3d621fdf5ca10f6be139b3c508cecc167",
+          "withoutMetadata": "7f6502b635c352d2abd65c082efff3f3d621fdf5ca10f6be139b3c508cecc167",
+          "linkedWithoutMetadata": "7f6502b635c352d2abd65c082efff3f3d621fdf5ca10f6be139b3c508cecc167"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "retrieve()",
+          "store(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:8"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:9"
+            },
+            {
+              "label": "thirdValue",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:10"
+            },
+            {
+              "label": "fourthValue",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:11"
+            },
+            {
+              "label": "fifthValue",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:12"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/BoxV2.sol:BoxV2": {
+        "src": "contracts/BoxV2.sol:7",
+        "version": {
+          "withMetadata": "6f32985f6b136c8c4011814634efcda4e67dbfa84f08097995531d3186fa5ce2",
+          "withoutMetadata": "6f32985f6b136c8c4011814634efcda4e67dbfa84f08097995531d3186fa5ce2",
+          "linkedWithoutMetadata": "6f32985f6b136c8c4011814634efcda4e67dbfa84f08097995531d3186fa5ce2"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:8"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:9"
+            },
+            {
+              "label": "thirdValue",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:10"
+            },
+            {
+              "label": "fourthValue",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:11"
+            },
+            {
+              "label": "fifthValue",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:12"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/BoxV2Invalid.sol:BoxV2Invalid": {
+        "src": "contracts/BoxV2Invalid.sol:7",
+        "version": {
+          "withMetadata": "3774d10b67840313ba0573c523c5f35c07bf0932d288928eb30664bd66508a12",
+          "withoutMetadata": "3774d10b67840313ba0573c523c5f35c07bf0932d288928eb30664bd66508a12",
+          "linkedWithoutMetadata": "3774d10b67840313ba0573c523c5f35c07bf0932d288928eb30664bd66508a12"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "insertedValue",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "BoxV2Invalid",
+              "src": "contracts/BoxV2Invalid.sol:8"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "BoxV2Invalid",
+              "src": "contracts/BoxV2Invalid.sol:9"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_string_storage",
+              "contract": "BoxV2Invalid",
+              "src": "contracts/BoxV2Invalid.sol:10"
+            },
+            {
+              "label": "renamedValue",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "BoxV2Invalid",
+              "src": "contracts/BoxV2Invalid.sol:11"
+            },
+            {
+              "label": "fourthValue",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "BoxV2Invalid",
+              "src": "contracts/BoxV2Invalid.sol:12"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/BoxWithStorageGap.sol:BoxWithStorageGap": {
+        "src": "contracts/BoxWithStorageGap.sol:7",
+        "version": {
+          "withMetadata": "135f74f8ac3499e643a0b91f0a9b3f6735c4b13ce75bd016b85a8c57bf54b158",
+          "withoutMetadata": "135f74f8ac3499e643a0b91f0a9b3f6735c4b13ce75bd016b85a8c57bf54b158",
+          "linkedWithoutMetadata": "135f74f8ac3499e643a0b91f0a9b3f6735c4b13ce75bd016b85a8c57bf54b158"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "retrieve()",
+          "store(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGap",
+              "src": "contracts/BoxWithStorageGap.sol:8"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGap",
+              "src": "contracts/BoxWithStorageGap.sol:9"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_array(t_uint256)10_storage",
+              "contract": "BoxWithStorageGap",
+              "src": "contracts/BoxWithStorageGap.sol:10"
+            },
+            {
+              "label": "thirdValue",
+              "offset": 0,
+              "slot": "13",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGap",
+              "src": "contracts/BoxWithStorageGap.sol:11"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)10_storage": {
+              "label": "uint256[10]",
+              "numberOfBytes": "320"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/BoxWithStorageGapV2.sol:BoxWithStorageGapV2": {
+        "src": "contracts/BoxWithStorageGapV2.sol:7",
+        "version": {
+          "withMetadata": "b17260894c363acdc4418be3ac0a1088ee825ae115519d7a720ae39954147d50",
+          "withoutMetadata": "b17260894c363acdc4418be3ac0a1088ee825ae115519d7a720ae39954147d50",
+          "linkedWithoutMetadata": "b17260894c363acdc4418be3ac0a1088ee825ae115519d7a720ae39954147d50"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2",
+              "src": "contracts/BoxWithStorageGapV2.sol:8"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2",
+              "src": "contracts/BoxWithStorageGapV2.sol:9"
+            },
+            {
+              "label": "newAddress",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_address",
+              "contract": "BoxWithStorageGapV2",
+              "src": "contracts/BoxWithStorageGapV2.sol:10"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_array(t_uint256)9_storage",
+              "contract": "BoxWithStorageGapV2",
+              "src": "contracts/BoxWithStorageGapV2.sol:11"
+            },
+            {
+              "label": "thirdValue",
+              "offset": 0,
+              "slot": "13",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2",
+              "src": "contracts/BoxWithStorageGapV2.sol:12"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)9_storage": {
+              "label": "uint256[9]",
+              "numberOfBytes": "288"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/BoxWithStorageGapV2Invalid.sol:BoxWithStorageGapV2Invalid": {
+        "src": "contracts/BoxWithStorageGapV2Invalid.sol:7",
+        "version": {
+          "withMetadata": "e13a57a6622cad0d395984513007bb927b28665fc0e28e7267dc102910b9aa21",
+          "withoutMetadata": "e13a57a6622cad0d395984513007bb927b28665fc0e28e7267dc102910b9aa21",
+          "linkedWithoutMetadata": "e13a57a6622cad0d395984513007bb927b28665fc0e28e7267dc102910b9aa21"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2Invalid",
+              "src": "contracts/BoxWithStorageGapV2Invalid.sol:8"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2Invalid",
+              "src": "contracts/BoxWithStorageGapV2Invalid.sol:9"
+            },
+            {
+              "label": "newAddress",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_address",
+              "contract": "BoxWithStorageGapV2Invalid",
+              "src": "contracts/BoxWithStorageGapV2Invalid.sol:10"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_array(t_uint256)10_storage",
+              "contract": "BoxWithStorageGapV2Invalid",
+              "src": "contracts/BoxWithStorageGapV2Invalid.sol:11"
+            },
+            {
+              "label": "thirdValue",
+              "offset": 0,
+              "slot": "14",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2Invalid",
+              "src": "contracts/BoxWithStorageGapV2Invalid.sol:12"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)10_storage": {
+              "label": "uint256[10]",
+              "numberOfBytes": "320"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable": {
+        "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:58",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:AddressUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:9",
+        "version": {
+          "withMetadata": "93b4dd07ea15fe5180a8d3cdf0dc7bdb894f66e7ac3c01933ba9514516e8a1e1",
+          "withoutMetadata": "93b4dd07ea15fe5180a8d3cdf0dc7bdb894f66e7ac3c01933ba9514516e8a1e1",
+          "linkedWithoutMetadata": "93b4dd07ea15fe5180a8d3cdf0dc7bdb894f66e7ac3c01933ba9514516e8a1e1"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/access/Ownable.sol:Ownable": {
+        "src": "@openzeppelin/contracts/access/Ownable.sol:20",
+        "inherit": [
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:28"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967": {
+        "src": "@openzeppelin/contracts/interfaces/IERC1967.sol:11",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/interfaces/draft-IERC1822.sol:IERC1822Proxiable": {
+        "src": "@openzeppelin/contracts/interfaces/draft-IERC1822.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "proxiableUUID()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:ERC1967Proxy": {
+        "src": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:15",
+        "version": {
+          "withMetadata": "1aeda151f611d176639c1ba8df1fa90aa07340f9971e822932493b1eda3fc457",
+          "withoutMetadata": "1aeda151f611d176639c1ba8df1fa90aa07340f9971e822932493b1eda3fc457",
+          "linkedWithoutMetadata": "1aeda151f611d176639c1ba8df1fa90aa07340f9971e822932493b1eda3fc457"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:ERC1967Upgrade",
+          "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967",
+          "@openzeppelin/contracts/proxy/Proxy.sol:Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC1967Proxy",
+            "src": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:22"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:ERC1967Upgrade": {
+        "src": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:18",
+        "inherit": [
+          "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/Proxy.sol:Proxy": {
+        "src": "@openzeppelin/contracts/proxy/Proxy.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/beacon/BeaconProxy.sol:BeaconProxy": {
+        "src": "@openzeppelin/contracts/proxy/beacon/BeaconProxy.sol:18",
+        "version": {
+          "withMetadata": "a4395038813c4e87b5806c0eadccb93dc9671492109f39bb225511a7ee9fb0d4",
+          "withoutMetadata": "a4395038813c4e87b5806c0eadccb93dc9671492109f39bb225511a7ee9fb0d4",
+          "linkedWithoutMetadata": "a4395038813c4e87b5806c0eadccb93dc9671492109f39bb225511a7ee9fb0d4"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:ERC1967Upgrade",
+          "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967",
+          "@openzeppelin/contracts/proxy/Proxy.sol:Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "BeaconProxy",
+            "src": "@openzeppelin/contracts/proxy/beacon/BeaconProxy.sol:30"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/beacon/IBeacon.sol:IBeacon": {
+        "src": "@openzeppelin/contracts/proxy/beacon/IBeacon.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "implementation()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol:UpgradeableBeacon": {
+        "src": "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol:16",
+        "version": {
+          "withMetadata": "c0562c5b872bad26f0af24d37a52896b0ae9bb0fdce208a891f95c77d6f0c94e",
+          "withoutMetadata": "c0562c5b872bad26f0af24d37a52896b0ae9bb0fdce208a891f95c77d6f0c94e",
+          "linkedWithoutMetadata": "c0562c5b872bad26f0af24d37a52896b0ae9bb0fdce208a891f95c77d6f0c94e"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context",
+          "@openzeppelin/contracts/proxy/beacon/IBeacon.sol:IBeacon"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address)",
+          "implementation()",
+          "upgradeTo(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "UpgradeableBeacon",
+            "src": "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol:28"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            },
+            {
+              "label": "_implementation",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_address",
+              "contract": "UpgradeableBeacon",
+              "src": "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol:17"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol:ProxyAdmin": {
+        "src": "@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol:13",
+        "version": {
+          "withMetadata": "3acb5982acd15d0b5b338ebb999f39f2a652862006f2cdcc74fad835d0553e0b",
+          "withoutMetadata": "3acb5982acd15d0b5b338ebb999f39f2a652862006f2cdcc74fad835d0553e0b",
+          "linkedWithoutMetadata": "3acb5982acd15d0b5b338ebb999f39f2a652862006f2cdcc74fad835d0553e0b"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "getProxyImplementation(address)",
+          "getProxyAdmin(address)",
+          "changeProxyAdmin(address,address)",
+          "upgrade(address,address)",
+          "upgradeAndCall(address,address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:ITransparentUpgradeableProxy": {
+        "src": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:14",
+        "inherit": [
+          "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967"
+        ],
+        "libraries": [],
+        "methods": [
+          "admin()",
+          "implementation()",
+          "changeAdmin(address)",
+          "upgradeTo(address)",
+          "upgradeToAndCall(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:TransparentUpgradeableProxy": {
+        "src": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:58",
+        "version": {
+          "withMetadata": "6849bdceb9e378051157f769471a196dc402a650fe57c8942ecd08654dafa163",
+          "withoutMetadata": "6849bdceb9e378051157f769471a196dc402a650fe57c8942ecd08654dafa163",
+          "linkedWithoutMetadata": "6849bdceb9e378051157f769471a196dc402a650fe57c8942ecd08654dafa163"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:ERC1967Proxy",
+          "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:ERC1967Upgrade",
+          "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967",
+          "@openzeppelin/contracts/proxy/Proxy.sol:Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "TransparentUpgradeableProxy",
+            "src": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:63"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/Address.sol:Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:9",
+        "version": {
+          "withMetadata": "04276145d8a311b87efa1686be795f43a7d4cedd81d0aea2fc7392d0a4372233",
+          "withoutMetadata": "04276145d8a311b87efa1686be795f43a7d4cedd81d0aea2fc7392d0a4372233",
+          "linkedWithoutMetadata": "04276145d8a311b87efa1686be795f43a7d4cedd81d0aea2fc7392d0a4372233"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/Context.sol:Context": {
+        "src": "@openzeppelin/contracts/utils/Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot": {
+        "src": "@openzeppelin/contracts/utils/StorageSlot.sol:34",
+        "version": {
+          "withMetadata": "0d4cc031aaf38095a57ce0437a1d1734dcc21c8ed397995fa80448406571f0ba",
+          "withoutMetadata": "0d4cc031aaf38095a57ce0437a1d1734dcc21c8ed397995fa80448406571f0ba",
+          "linkedWithoutMetadata": "0d4cc031aaf38095a57ce0437a1d1734dcc21c8ed397995fa80448406571f0ba"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/Box.sol:Box": {
+        "src": "contracts/Box.sol:7",
+        "version": {
+          "withMetadata": "686b73c1388be8b9184c1f31c346ecd96889140ccfe4b4ad9a92575d562557d6",
+          "withoutMetadata": "686b73c1388be8b9184c1f31c346ecd96889140ccfe4b4ad9a92575d562557d6",
+          "linkedWithoutMetadata": "686b73c1388be8b9184c1f31c346ecd96889140ccfe4b4ad9a92575d562557d6"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "retrieve()",
+          "store(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:8"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:9"
+            },
+            {
+              "label": "thirdValue",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:10"
+            },
+            {
+              "label": "fourthValue",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:11"
+            },
+            {
+              "label": "fifthValue",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:12"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/BoxV2.sol:BoxV2": {
+        "src": "contracts/BoxV2.sol:7",
+        "version": {
+          "withMetadata": "01e006b2a9db7fb25ca582b3c9f7ad9e06446eaff8545e1c559bc00023de4510",
+          "withoutMetadata": "01e006b2a9db7fb25ca582b3c9f7ad9e06446eaff8545e1c559bc00023de4510",
+          "linkedWithoutMetadata": "01e006b2a9db7fb25ca582b3c9f7ad9e06446eaff8545e1c559bc00023de4510"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:8"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:9"
+            },
+            {
+              "label": "thirdValue",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:10"
+            },
+            {
+              "label": "fourthValue",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:11"
+            },
+            {
+              "label": "fifthValue",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:12"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/BoxV2Invalid.sol:BoxV2Invalid": {
+        "src": "contracts/BoxV2Invalid.sol:7",
+        "version": {
+          "withMetadata": "e359c2d0fc17c78356c560ccfbe5eaa1bde4195be73d5f66e79bbdc6878d000d",
+          "withoutMetadata": "e359c2d0fc17c78356c560ccfbe5eaa1bde4195be73d5f66e79bbdc6878d000d",
+          "linkedWithoutMetadata": "e359c2d0fc17c78356c560ccfbe5eaa1bde4195be73d5f66e79bbdc6878d000d"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "insertedValue",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "BoxV2Invalid",
+              "src": "contracts/BoxV2Invalid.sol:8"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "BoxV2Invalid",
+              "src": "contracts/BoxV2Invalid.sol:9"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_string_storage",
+              "contract": "BoxV2Invalid",
+              "src": "contracts/BoxV2Invalid.sol:10"
+            },
+            {
+              "label": "renamedValue",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "BoxV2Invalid",
+              "src": "contracts/BoxV2Invalid.sol:11"
+            },
+            {
+              "label": "fourthValue",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "BoxV2Invalid",
+              "src": "contracts/BoxV2Invalid.sol:12"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/BoxWithStorageGap.sol:BoxWithStorageGap": {
+        "src": "contracts/BoxWithStorageGap.sol:7",
+        "version": {
+          "withMetadata": "6306c7e71e9cd4b18fe4134b9b453cf5895f7afd13a635398d45899c5da4d5dc",
+          "withoutMetadata": "6306c7e71e9cd4b18fe4134b9b453cf5895f7afd13a635398d45899c5da4d5dc",
+          "linkedWithoutMetadata": "6306c7e71e9cd4b18fe4134b9b453cf5895f7afd13a635398d45899c5da4d5dc"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "retrieve()",
+          "store(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGap",
+              "src": "contracts/BoxWithStorageGap.sol:8"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGap",
+              "src": "contracts/BoxWithStorageGap.sol:9"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_array(t_uint256)10_storage",
+              "contract": "BoxWithStorageGap",
+              "src": "contracts/BoxWithStorageGap.sol:10"
+            },
+            {
+              "label": "thirdValue",
+              "offset": 0,
+              "slot": "13",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGap",
+              "src": "contracts/BoxWithStorageGap.sol:11"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)10_storage": {
+              "label": "uint256[10]",
+              "numberOfBytes": "320"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/BoxWithStorageGapV2.sol:BoxWithStorageGapV2": {
+        "src": "contracts/BoxWithStorageGapV2.sol:7",
+        "version": {
+          "withMetadata": "0896b0be0142031c54f71b69ff2dd987180b02e95a90e4f80b00f20cbc0105a8",
+          "withoutMetadata": "0896b0be0142031c54f71b69ff2dd987180b02e95a90e4f80b00f20cbc0105a8",
+          "linkedWithoutMetadata": "0896b0be0142031c54f71b69ff2dd987180b02e95a90e4f80b00f20cbc0105a8"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2",
+              "src": "contracts/BoxWithStorageGapV2.sol:8"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2",
+              "src": "contracts/BoxWithStorageGapV2.sol:9"
+            },
+            {
+              "label": "newAddress",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_address",
+              "contract": "BoxWithStorageGapV2",
+              "src": "contracts/BoxWithStorageGapV2.sol:10"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_array(t_uint256)9_storage",
+              "contract": "BoxWithStorageGapV2",
+              "src": "contracts/BoxWithStorageGapV2.sol:11"
+            },
+            {
+              "label": "thirdValue",
+              "offset": 0,
+              "slot": "13",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2",
+              "src": "contracts/BoxWithStorageGapV2.sol:12"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)9_storage": {
+              "label": "uint256[9]",
+              "numberOfBytes": "288"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/BoxWithStorageGapV2Invalid.sol:BoxWithStorageGapV2Invalid": {
+        "src": "contracts/BoxWithStorageGapV2Invalid.sol:7",
+        "version": {
+          "withMetadata": "a05710fee471148cd033449d805f32669f3b68e632964c0d7aedffaad3de0a38",
+          "withoutMetadata": "a05710fee471148cd033449d805f32669f3b68e632964c0d7aedffaad3de0a38",
+          "linkedWithoutMetadata": "a05710fee471148cd033449d805f32669f3b68e632964c0d7aedffaad3de0a38"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2Invalid",
+              "src": "contracts/BoxWithStorageGapV2Invalid.sol:8"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2Invalid",
+              "src": "contracts/BoxWithStorageGapV2Invalid.sol:9"
+            },
+            {
+              "label": "newAddress",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_address",
+              "contract": "BoxWithStorageGapV2Invalid",
+              "src": "contracts/BoxWithStorageGapV2Invalid.sol:10"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_array(t_uint256)10_storage",
+              "contract": "BoxWithStorageGapV2Invalid",
+              "src": "contracts/BoxWithStorageGapV2Invalid.sol:11"
+            },
+            {
+              "label": "thirdValue",
+              "offset": 0,
+              "slot": "14",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2Invalid",
+              "src": "contracts/BoxWithStorageGapV2Invalid.sol:12"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)10_storage": {
+              "label": "uint256[10]",
+              "numberOfBytes": "320"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      }
+    },
+    {
+      "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable": {
+        "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:58",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:AddressUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:9",
+        "version": {
+          "withMetadata": "2f79f5950fe078b42a4732cf96e2fffe27243c3ba0999349ecdf119e0e0c57d2",
+          "withoutMetadata": "2f79f5950fe078b42a4732cf96e2fffe27243c3ba0999349ecdf119e0e0c57d2",
+          "linkedWithoutMetadata": "2f79f5950fe078b42a4732cf96e2fffe27243c3ba0999349ecdf119e0e0c57d2"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/access/Ownable.sol:Ownable": {
+        "src": "@openzeppelin/contracts/access/Ownable.sol:20",
+        "inherit": [
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:28"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967": {
+        "src": "@openzeppelin/contracts/interfaces/IERC1967.sol:11",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/interfaces/draft-IERC1822.sol:IERC1822Proxiable": {
+        "src": "@openzeppelin/contracts/interfaces/draft-IERC1822.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "proxiableUUID()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:ERC1967Proxy": {
+        "src": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:15",
+        "version": {
+          "withMetadata": "120d1d9e43ffc4f2b96c5a480e003d4aea4e13229be7a1998b472c0aae52e646",
+          "withoutMetadata": "120d1d9e43ffc4f2b96c5a480e003d4aea4e13229be7a1998b472c0aae52e646",
+          "linkedWithoutMetadata": "120d1d9e43ffc4f2b96c5a480e003d4aea4e13229be7a1998b472c0aae52e646"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:ERC1967Upgrade",
+          "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967",
+          "@openzeppelin/contracts/proxy/Proxy.sol:Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC1967Proxy",
+            "src": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:22"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:ERC1967Upgrade": {
+        "src": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:18",
+        "inherit": [
+          "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/Proxy.sol:Proxy": {
+        "src": "@openzeppelin/contracts/proxy/Proxy.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/beacon/BeaconProxy.sol:BeaconProxy": {
+        "src": "@openzeppelin/contracts/proxy/beacon/BeaconProxy.sol:18",
+        "version": {
+          "withMetadata": "7cf224ef973e603e9a1fc3006e9e98ab73237acfdb921ad1dae009339c1d3e73",
+          "withoutMetadata": "7cf224ef973e603e9a1fc3006e9e98ab73237acfdb921ad1dae009339c1d3e73",
+          "linkedWithoutMetadata": "7cf224ef973e603e9a1fc3006e9e98ab73237acfdb921ad1dae009339c1d3e73"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:ERC1967Upgrade",
+          "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967",
+          "@openzeppelin/contracts/proxy/Proxy.sol:Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "BeaconProxy",
+            "src": "@openzeppelin/contracts/proxy/beacon/BeaconProxy.sol:30"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/beacon/IBeacon.sol:IBeacon": {
+        "src": "@openzeppelin/contracts/proxy/beacon/IBeacon.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "implementation()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol:UpgradeableBeacon": {
+        "src": "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol:16",
+        "version": {
+          "withMetadata": "d84cdc321862be201719b0e72d767ef1d7093b6e5f656bf228222ea73fe07460",
+          "withoutMetadata": "d84cdc321862be201719b0e72d767ef1d7093b6e5f656bf228222ea73fe07460",
+          "linkedWithoutMetadata": "d84cdc321862be201719b0e72d767ef1d7093b6e5f656bf228222ea73fe07460"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context",
+          "@openzeppelin/contracts/proxy/beacon/IBeacon.sol:IBeacon"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address)",
+          "implementation()",
+          "upgradeTo(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "UpgradeableBeacon",
+            "src": "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol:28"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            },
+            {
+              "label": "_implementation",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_address",
+              "contract": "UpgradeableBeacon",
+              "src": "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol:17"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol:ProxyAdmin": {
+        "src": "@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol:13",
+        "version": {
+          "withMetadata": "f69ac6a7a09ff7c3e03b77ffb3d02c97aa0b6d08832cbef6ee221f27127baf10",
+          "withoutMetadata": "f69ac6a7a09ff7c3e03b77ffb3d02c97aa0b6d08832cbef6ee221f27127baf10",
+          "linkedWithoutMetadata": "f69ac6a7a09ff7c3e03b77ffb3d02c97aa0b6d08832cbef6ee221f27127baf10"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/access/Ownable.sol:Ownable",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "getProxyImplementation(address)",
+          "getProxyAdmin(address)",
+          "changeProxyAdmin(address,address)",
+          "upgrade(address,address)",
+          "upgradeAndCall(address,address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:ITransparentUpgradeableProxy": {
+        "src": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:14",
+        "inherit": [
+          "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967"
+        ],
+        "libraries": [],
+        "methods": [
+          "admin()",
+          "implementation()",
+          "changeAdmin(address)",
+          "upgradeTo(address)",
+          "upgradeToAndCall(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:TransparentUpgradeableProxy": {
+        "src": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:58",
+        "version": {
+          "withMetadata": "1d2dd070fb74d10dceebda945444f4bee9dc6e13ffcbf061664047759bbffbd7",
+          "withoutMetadata": "1d2dd070fb74d10dceebda945444f4bee9dc6e13ffcbf061664047759bbffbd7",
+          "linkedWithoutMetadata": "1d2dd070fb74d10dceebda945444f4bee9dc6e13ffcbf061664047759bbffbd7"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:ERC1967Proxy",
+          "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol:ERC1967Upgrade",
+          "@openzeppelin/contracts/interfaces/IERC1967.sol:IERC1967",
+          "@openzeppelin/contracts/proxy/Proxy.sol:Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "TransparentUpgradeableProxy",
+            "src": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol:63"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/Address.sol:Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:9",
+        "version": {
+          "withMetadata": "9e985bd38d0fb457580d5b5143bacfc2a67647cfad3887ea0f2a0a17b4890bbb",
+          "withoutMetadata": "9e985bd38d0fb457580d5b5143bacfc2a67647cfad3887ea0f2a0a17b4890bbb",
+          "linkedWithoutMetadata": "9e985bd38d0fb457580d5b5143bacfc2a67647cfad3887ea0f2a0a17b4890bbb"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/Context.sol:Context": {
+        "src": "@openzeppelin/contracts/utils/Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "@openzeppelin/contracts/utils/StorageSlot.sol:StorageSlot": {
+        "src": "@openzeppelin/contracts/utils/StorageSlot.sol:34",
+        "version": {
+          "withMetadata": "ee0a24f11c1004e7b6959c1dac30b788f562255c8a73e0952e99f8753cacd934",
+          "withoutMetadata": "ee0a24f11c1004e7b6959c1dac30b788f562255c8a73e0952e99f8753cacd934",
+          "linkedWithoutMetadata": "ee0a24f11c1004e7b6959c1dac30b788f562255c8a73e0952e99f8753cacd934"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/Box.sol:Box": {
+        "src": "contracts/Box.sol:7",
+        "version": {
+          "withMetadata": "172a4edbac1fcfd482869533b9662194c8ba5ab72aeca3e287c9cb6c5ff19b26",
+          "withoutMetadata": "172a4edbac1fcfd482869533b9662194c8ba5ab72aeca3e287c9cb6c5ff19b26",
+          "linkedWithoutMetadata": "172a4edbac1fcfd482869533b9662194c8ba5ab72aeca3e287c9cb6c5ff19b26"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "retrieve()",
+          "store(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:8"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:9"
+            },
+            {
+              "label": "thirdValue",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:10"
+            },
+            {
+              "label": "fourthValue",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:11"
+            },
+            {
+              "label": "fifthValue",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:12"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/BoxV2.sol:BoxV2": {
+        "src": "contracts/BoxV2.sol:7",
+        "version": {
+          "withMetadata": "9741b15d00f6c57555c105d98535d3c467ffe3e3a4236fd87fa77254502579a9",
+          "withoutMetadata": "9741b15d00f6c57555c105d98535d3c467ffe3e3a4236fd87fa77254502579a9",
+          "linkedWithoutMetadata": "9741b15d00f6c57555c105d98535d3c467ffe3e3a4236fd87fa77254502579a9"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:8"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:9"
+            },
+            {
+              "label": "thirdValue",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:10"
+            },
+            {
+              "label": "fourthValue",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:11"
+            },
+            {
+              "label": "fifthValue",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:12"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/BoxV2Invalid.sol:BoxV2Invalid": {
+        "src": "contracts/BoxV2Invalid.sol:7",
+        "version": {
+          "withMetadata": "0473b844eeefad44e1e5d8427b0a5d20fc4dc26ed711577c83f75a71c67b4e7a",
+          "withoutMetadata": "0473b844eeefad44e1e5d8427b0a5d20fc4dc26ed711577c83f75a71c67b4e7a",
+          "linkedWithoutMetadata": "0473b844eeefad44e1e5d8427b0a5d20fc4dc26ed711577c83f75a71c67b4e7a"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "insertedValue",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "BoxV2Invalid",
+              "src": "contracts/BoxV2Invalid.sol:8"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "BoxV2Invalid",
+              "src": "contracts/BoxV2Invalid.sol:9"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_string_storage",
+              "contract": "BoxV2Invalid",
+              "src": "contracts/BoxV2Invalid.sol:10"
+            },
+            {
+              "label": "renamedValue",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "BoxV2Invalid",
+              "src": "contracts/BoxV2Invalid.sol:11"
+            },
+            {
+              "label": "fourthValue",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "BoxV2Invalid",
+              "src": "contracts/BoxV2Invalid.sol:12"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/BoxWithStorageGap.sol:BoxWithStorageGap": {
+        "src": "contracts/BoxWithStorageGap.sol:7",
+        "version": {
+          "withMetadata": "54da9d94090d784c53cc0a2335a25aea75ba6d330aad6bfebcfcaf7f6960d0bf",
+          "withoutMetadata": "54da9d94090d784c53cc0a2335a25aea75ba6d330aad6bfebcfcaf7f6960d0bf",
+          "linkedWithoutMetadata": "54da9d94090d784c53cc0a2335a25aea75ba6d330aad6bfebcfcaf7f6960d0bf"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "retrieve()",
+          "store(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGap",
+              "src": "contracts/BoxWithStorageGap.sol:8"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGap",
+              "src": "contracts/BoxWithStorageGap.sol:9"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_array(t_uint256)10_storage",
+              "contract": "BoxWithStorageGap",
+              "src": "contracts/BoxWithStorageGap.sol:10"
+            },
+            {
+              "label": "thirdValue",
+              "offset": 0,
+              "slot": "13",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGap",
+              "src": "contracts/BoxWithStorageGap.sol:11"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)10_storage": {
+              "label": "uint256[10]",
+              "numberOfBytes": "320"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/BoxWithStorageGapV2.sol:BoxWithStorageGapV2": {
+        "src": "contracts/BoxWithStorageGapV2.sol:7",
+        "version": {
+          "withMetadata": "ac16f979b3de481f7e39189f311c402c0ab1b9926371b65a95f723155ddc7873",
+          "withoutMetadata": "ac16f979b3de481f7e39189f311c402c0ab1b9926371b65a95f723155ddc7873",
+          "linkedWithoutMetadata": "ac16f979b3de481f7e39189f311c402c0ab1b9926371b65a95f723155ddc7873"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2",
+              "src": "contracts/BoxWithStorageGapV2.sol:8"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2",
+              "src": "contracts/BoxWithStorageGapV2.sol:9"
+            },
+            {
+              "label": "newAddress",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_address",
+              "contract": "BoxWithStorageGapV2",
+              "src": "contracts/BoxWithStorageGapV2.sol:10"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_array(t_uint256)9_storage",
+              "contract": "BoxWithStorageGapV2",
+              "src": "contracts/BoxWithStorageGapV2.sol:11"
+            },
+            {
+              "label": "thirdValue",
+              "offset": 0,
+              "slot": "13",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2",
+              "src": "contracts/BoxWithStorageGapV2.sol:12"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)9_storage": {
+              "label": "uint256[9]",
+              "numberOfBytes": "288"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      },
+      "contracts/BoxWithStorageGapV2Invalid.sol:BoxWithStorageGapV2Invalid": {
+        "src": "contracts/BoxWithStorageGapV2Invalid.sol:7",
+        "version": {
+          "withMetadata": "07c6bc773fadabde243e171011ea867fcd5c22cf2993c6dcf0fb65ccbaaf9988",
+          "withoutMetadata": "07c6bc773fadabde243e171011ea867fcd5c22cf2993c6dcf0fb65ccbaaf9988",
+          "linkedWithoutMetadata": "07c6bc773fadabde243e171011ea867fcd5c22cf2993c6dcf0fb65ccbaaf9988"
+        },
+        "inherit": [
+          "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "initialize(uint256)",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+            },
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2Invalid",
+              "src": "contracts/BoxWithStorageGapV2Invalid.sol:8"
+            },
+            {
+              "label": "secondValue",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2Invalid",
+              "src": "contracts/BoxWithStorageGapV2Invalid.sol:9"
+            },
+            {
+              "label": "newAddress",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_address",
+              "contract": "BoxWithStorageGapV2Invalid",
+              "src": "contracts/BoxWithStorageGapV2Invalid.sol:10"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_array(t_uint256)10_storage",
+              "contract": "BoxWithStorageGapV2Invalid",
+              "src": "contracts/BoxWithStorageGapV2Invalid.sol:11"
+            },
+            {
+              "label": "thirdValue",
+              "offset": 0,
+              "slot": "14",
+              "type": "t_uint256",
+              "contract": "BoxWithStorageGapV2Invalid",
+              "src": "contracts/BoxWithStorageGapV2Invalid.sol:12"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)10_storage": {
+              "label": "uint256[10]",
+              "numberOfBytes": "320"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.20"
+      }
+    }
+  ]
+}

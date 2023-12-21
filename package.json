@@ -1,0 +1,31 @@
+{
+  "name": "root",
+  "version": "0.0.0",
+  "author": "Matter Labs",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "@npmcli/promise-spawn": "^6.0.2",
+    "commander": "^10.0.0",
+    "get-monorepo-packages": "^1.2.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.1.6",
+    "wsrun": "^5.2.2"
+  },
+  "scripts": {
+    "build": "tsc --build packages/hardhat-zksync-solc packages/hardhat-zksync-deploy packages/hardhat-zksync-vyper packages/hardhat-zksync-chai-matchers packages/hardhat-zksync-verify packages/hardhat-zksync-upgradable packages/hardhat-zksync-verify-vyper packages/hardhat-zksync-node packages/hardhat-zksync-ethers packages/hardhat-zksync-toolbox",
+    "watch": "tsc --build --watch packages/hardhat-zksync-solc packages/hardhat-zksync-deploy packages/hardhat-zksync-vyper packages/hardhat-zksync-chai-matchers packages/hardhat-zksync-verify packages/hardhat-zksync-upgradable packages/hardhat-zksync-verify-vyper packages/hardhat-zksync-node packages/hardhat-zksync-ethers packages/hardhat-zksync-toolbox",
+    "clean": "wsrun --exclude-missing clean",
+    "lint": "wsrun --exclude-missing --stages lint",
+    "lint:fix": "wsrun --exclude-missing --stages lint:fix",
+    "prettier:check": "wsrun --exclude-missing --stages prettier:check",
+    "test:release-script": "mocha scripts/test/tests.js"
+  },
+  "dependencies": {},
+  "type": "module"
+}

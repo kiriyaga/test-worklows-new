@@ -1,0 +1,29 @@
+{
+  "_format": "hh-vy-cache-1",
+  "files": {
+    "/home/kiriyaga/txFusion/hardhat-zksync/packages/hardhat-zksync-vyper/test/fixture-projects/factory/contracts/CreateForwarder.vy": {
+      "lastModificationDate": 1701870126614,
+      "contentHash": "578f5e3f87b821d35ac5a7d92eac4dc5",
+      "sourceName": "contracts/CreateForwarder.vy",
+      "vyperConfig": {
+        "version": "0.3.3"
+      },
+      "versionPragma": "^0.3",
+      "artifacts": [
+        "CreateForwarder"
+      ]
+    },
+    "/home/kiriyaga/txFusion/hardhat-zksync/packages/hardhat-zksync-vyper/test/fixture-projects/factory/contracts/DeployMe.vy": {
+      "lastModificationDate": 1701870126614,
+      "contentHash": "a92069a9405538614dbfc4e3ffd0cdb2",
+      "sourceName": "contracts/DeployMe.vy",
+      "vyperConfig": {
+        "version": "0.3.3"
+      },
+      "versionPragma": "^0.3",
+      "artifacts": [
+        "DeployMe"
+      ]
+    }
+  }
+}

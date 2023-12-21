@@ -1,0 +1,17 @@
+{
+  "_format": "hh-vy-cache-1",
+  "files": {
+    "/home/kiriyaga/txFusion/hardhat-zksync/packages/hardhat-zksync-verify-vyper/test/fixture-projects/localGreeter/contracts/Greeter.vy": {
+      "lastModificationDate": 1694779185004,
+      "contentHash": "e1d45f9311bb038915955050db21fe6f",
+      "sourceName": "contracts/Greeter.vy",
+      "vyperConfig": {
+        "version": "0.3.3"
+      },
+      "versionPragma": "^0.3.3",
+      "artifacts": [
+        "Greeter"
+      ]
+    }
+  }
+}

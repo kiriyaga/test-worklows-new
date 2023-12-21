@@ -1,0 +1,38 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/kiriyaga/txFusion/hardhat-zksync/examples/mixed-example/contracts/Constant.sol": {
+      "lastModificationDate": 1691678909736,
+      "contentHash": "0a0a1cfc18550842edc010e20700898b",
+      "sourceName": "contracts/Constant.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Constant"
+      ]
+    }
+  }
+}
