@@ -1,7 +1,6 @@
 name: Publish zksolc plugin
 
 on:
-on:
   workflow_dispatch:
     inputs:
       tag:

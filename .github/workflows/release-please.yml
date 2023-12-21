@@ -1,3 +1,5 @@
+name: Release Please
+
 on:
   workflow_dispatch:
 
@@ -5,7 +7,6 @@ permissions:
   contents: write
   pull-requests: write
 
-name: release-please
 jobs:
   release-please:
     runs-on: ubuntu-latest
