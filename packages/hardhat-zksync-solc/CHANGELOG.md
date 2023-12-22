@@ -1,5 +1,13 @@
 # @matterlabs/hardhat-zksync-solc
 
+## [1.0.6](https://github.com/kiriyaga/test-worklows/compare/@matterlabs/hardhat-zksync-solc-v1.0.5...@matterlabs/hardhat-zksync-solc-v1.0.6) (2023-12-22)
+
+
+### Bug Fixes
+
+* **docs:** update solc readme ([1e9f3b1](https://github.com/kiriyaga/test-worklows/commit/1e9f3b12351c340118cca75c73d22a74102dd96e))
+* **docs:** update solc readme again ([6cfd082](https://github.com/kiriyaga/test-worklows/commit/6cfd08234115e3b49a79c276b3ec8dffcf49a5b3))
+
 ## 1.0.5
 
 ### Patch Changes
