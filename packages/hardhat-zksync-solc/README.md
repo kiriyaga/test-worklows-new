@@ -1,5 +1,6 @@
 # hardhat-zksync-solc
 CAOOOOOOOO MIMIIIIIIIIIIII I NIKOLICAAAQ
+krokewokroekwokpoewkpokew
 [Hardhat](https://hardhat.org/) plugin to compile smart contracts for the zkSync network.
 
 
