@@ -1,5 +1,12 @@
 # @matterlabs/hardhat-zksync-deploy
 
+## [0.6.7](https://github.com/kiriyaga/test-worklows/compare/@matterlabs/hardhat-zksync-deploy-v0.6.6...@matterlabs/hardhat-zksync-deploy-v0.6.7) (2023-12-21)
+
+
+### Features
+
+* update plugin name ([aadf530](https://github.com/kiriyaga/test-worklows/commit/aadf530d0ac56296be5bcde72296366134466e23))
+
 ## [0.6.6](https://github.com/kiriyaga/test-worklows/compare/@matterlabs/hardhat-zksync-deploy-v0.6.5...@matterlabs/hardhat-zksync-deploy-v0.6.6) (2023-12-21)
 
 
