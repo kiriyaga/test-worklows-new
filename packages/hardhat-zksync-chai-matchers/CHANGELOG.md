@@ -1,5 +1,12 @@
 # @matterlabs/hardhat-zksync-chai-matchers
 
+## [1.3.2](https://github.com/kiriyaga/test-worklows/compare/@matterlabs/hardhat-zksync-chai-matchers-v1.3.1...@matterlabs/hardhat-zksync-chai-matchers-v1.3.2) (2023-12-22)
+
+
+### Bug Fixes
+
+* delete new constant ([be07436](https://github.com/kiriyaga/test-worklows/commit/be074364e9acff91cde2d40d9d6193dbbca9dde8))
+
 ## [1.3.1](https://github.com/kiriyaga/test-worklows/compare/@matterlabs/hardhat-zksync-chai-matchers-v1.3.0...@matterlabs/hardhat-zksync-chai-matchers-v1.3.1) (2023-12-21)
 
 
