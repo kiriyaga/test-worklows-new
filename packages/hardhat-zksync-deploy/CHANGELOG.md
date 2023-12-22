@@ -3,7 +3,7 @@
 ## [1.2.0](https://github.com/kiriyaga/test-worklows/compare/@matterlabs/hardhat-zksync-deploy-v1.1.4...@matterlabs/hardhat-zksync-deploy-v1.2.0) (2023-12-22)
 
 
-### Features
+### MIMI
 
 * new feature ([#24](https://github.com/kiriyaga/test-worklows/issues/24)) ([9164499](https://github.com/kiriyaga/test-worklows/commit/91644994af67e8950ea506b6f471f0e819dd7e8a))
 
