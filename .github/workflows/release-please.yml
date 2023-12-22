@@ -37,6 +37,7 @@ jobs:
           jq --null-input --arg text "$(cat ./release_info)" '{"text": $text}' > mattermost.json
 
       - uses: mattermost/action-mattermost-notify@master
+        if: steps.release.outputs.release_created == 'true'
         env:
           MATTERMOST_USERNAME: "Hardhat Release Bot"
           MATTERMOST_WEBHOOK_URL: ${{ secrets.MATTERMOST_URL }}
