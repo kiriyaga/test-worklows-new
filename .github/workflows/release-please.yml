@@ -1,4 +1,4 @@
-name: Release Please
+name: Publish packages to github
 
 on:
   push:
@@ -22,8 +22,21 @@ jobs:
         uses: google-github-actions/release-please-action@v4
         with:
             token: ${{ secrets.GITHUB_TOKEN }}
-            command: manifest
             config-file: .github/release-please/config.json
             manifest-file: .github/release-please/manifest.json
-            monorepo-tags: true
             target-branch: ${{ github.ref_name }}
+
+      # New step to create the Mattermost message
+      - name: Create the MM Message
+        if: steps.release.outputs.release_created == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG_NAME=$(echo ${{ steps.release.outputs.tag_name }})
+          gh -R matter-labs/hardhat-zksync release view "$TAG_NAME" --json tagName,body --template '## {{.tagName}} {{"\n"}}{{.body}}' > ./release_info
+          jq --null-input --arg text "$(cat ./release_info)" '{"text": $text}' > mattermost.json
+
+      - uses: mattermost/action-mattermost-notify@master
+        env:
+          MATTERMOST_USERNAME: "Hardhat Release Bot"
+          MATTERMOST_WEBHOOK_URL: ${{ secrets.MATTERMOST_URL }}
