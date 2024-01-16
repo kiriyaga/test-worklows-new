@@ -27,17 +27,9 @@ jobs:
             target-branch: ${{ github.ref_name }}
 
       # New step to create the Mattermost message
-      - name: Create the MM Message
-        if: steps.release.outputs.release_created == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          TAG_NAME=$(echo ${{ steps.release.outputs.tag_name }})
-          gh -R matter-labs/hardhat-zksync release view "$TAG_NAME" --json tagName,body --template '## {{.tagName}} {{"\n"}}{{.body}}' > ./release_info
-          jq --null-input --arg text "$(cat ./release_info)" '{"text": $text}' > mattermost.json
-
-      - uses: mattermost/action-mattermost-notify@master
-        if: steps.release.outputs.release_created == 'true'
-        env:
-          MATTERMOST_USERNAME: "Hardhat Release Bot"
-          MATTERMOST_WEBHOOK_URL: ${{ secrets.MATTERMOST_URL }}
+      - name: Send Release Info
+        if: ${{ steps.release.outputs.releases_created }}
+        uses: matter-labs/format-release-please-for-slack-action@69e6fe9e4ec531b7b5fb0d826f73c190db83cf42 # v2.1.0
+        with:
+          release-please-output: ${{ toJSON(steps.release.outputs) }}
+          slack-webhook-url: ${{ secrets.MATTERMOST_URL }}
