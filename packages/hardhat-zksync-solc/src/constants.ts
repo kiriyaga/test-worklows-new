@@ -34,7 +34,7 @@ export const ZKSOLC_COMPILERS_SELECTOR_MAP = {
     ]
 };
 
-export const ZKSOLC_COMPILER_VERSION_MAX_VERSION = "1.3.14";
+export const ZKSOLC_COMPILER_VERSION_MAX_VERSION = "1.3.16";
 export const ZKSOLC_COMPILER_VERSION_MIN_VERSION = "1.3.13";
 export const ZKSOLC_BIN_OWNER = 'matter-labs';
 export const ZKSOLC_BIN_REPOSITORY_NAME = 'zksolc-bin';
