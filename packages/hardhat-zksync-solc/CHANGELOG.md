@@ -1,5 +1,12 @@
 # @matterlabs/hardhat-zksync-solc
 
+## [1.0.8](https://github.com/kiriyaga/test-worklows/compare/@matterlabs/hardhat-zksync-solc-v1.0.7...@matterlabs/hardhat-zksync-solc-v1.0.8) (2024-01-16)
+
+
+### Bug Fixes
+
+* new artifact const solc ([0ee170a](https://github.com/kiriyaga/test-worklows/commit/0ee170a8cc2064bc75918661dc4db455d2387c56))
+
 ## [1.0.7](https://github.com/kiriyaga/test-worklows/compare/@matterlabs/hardhat-zksync-solc-v1.0.6...@matterlabs/hardhat-zksync-solc-v1.0.7) (2024-01-16)
 
 
