@@ -1,5 +1,17 @@
 # @matterlabs/hardhat-zksync-solc
 
+## [1.3.0](https://github.com/kiriyaga/test-worklows/compare/@matterlabs/hardhat-zksync-solc-v1.2.0...@matterlabs/hardhat-zksync-solc-v1.3.0) (2024-01-31)
+
+
+### Features
+
+* support for zksync-ethers sdk instead of zksync-web3 ([bdd91ca](https://github.com/kiriyaga/test-worklows/commit/bdd91caa0bf36c95aaa7ea2399c7c411731ec369))
+
+
+### Bug Fixes
+
+* ethers-v6 is now online ([104d6c6](https://github.com/kiriyaga/test-worklows/commit/104d6c6d0f9e1817f04a29885df5f604d7dcaa0f))
+
 ## [1.2.0](https://github.com/kiriyaga/test-worklows/compare/@matterlabs/hardhat-zksync-solc-v1.1.0...@matterlabs/hardhat-zksync-solc-v1.2.0) (2024-01-31)
 
 
