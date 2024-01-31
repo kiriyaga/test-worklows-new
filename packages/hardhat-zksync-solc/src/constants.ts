@@ -7,7 +7,7 @@ export const DEFAULT_TIMEOUT_MILISECONDS = 30000;
 export const DETECT_MISSING_LIBRARY_MODE_COMPILER_VERSION = '1.3.14';
 // User agent of MacOSX Chrome 120.0.0.0
 export const USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
-export const BLABLA = 'blabla123';
+export const BLABLA = 'blabla1235';
 export const defaultZkSolcConfig: ZkSolcConfig = {
     version: 'latest',
     compilerSource: 'binary',
