@@ -1,5 +1,12 @@
 # @matterlabs/hardhat-zksync-solc
 
+## [1.0.9](https://github.com/kiriyaga/test-worklows/compare/@matterlabs/hardhat-zksync-solc-v1.0.8...@matterlabs/hardhat-zksync-solc-v1.0.9) (2024-01-31)
+
+
+### Bug Fixes
+
+* add blabla ([3376946](https://github.com/kiriyaga/test-worklows/commit/3376946c021e3dd5cd087a39aa7afd05eb29c04e))
+
 ## [1.0.8](https://github.com/kiriyaga/test-worklows/compare/@matterlabs/hardhat-zksync-solc-v1.0.7...@matterlabs/hardhat-zksync-solc-v1.0.8) (2024-01-16)
 
 
