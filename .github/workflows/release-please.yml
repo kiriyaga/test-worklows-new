@@ -27,9 +27,6 @@ jobs:
             manifest-file: .github/release-please/manifest.json
             monorepo-tags: true
 
-      - name: Test
-        run: echo ${{ toJSON(steps.release.outputs) }}
-
       # New step to create the Mattermost message
       - name: Send Release Info
         if: ${{ steps.release.outputs.release_created }}
