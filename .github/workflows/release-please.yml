@@ -22,10 +22,11 @@ jobs:
         uses: google-github-actions/release-please-action@v3
         with:
             token: ${{ secrets.GITHUB_TOKEN }}
+            command: manifest
             config-file: .github/release-please/config.json
             manifest-file: .github/release-please/manifest.json
-            target-branch: ${{ github.ref_name }}
-            
+            monorepo-tags: true
+
       - name: Test
         run: echo ${{ toJSON(steps.release.outputs) }}
 
