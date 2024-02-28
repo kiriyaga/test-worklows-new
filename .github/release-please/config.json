@@ -37,11 +37,11 @@
             "release-type": "node",
             "component": "@matterlabs/hardhat-zksync-chai-matchers"
         },
-        "packages/hardhat-zksync-chai-verify-vyper": {
+        "packages/hardhat-zksync-verify-vyper": {
             "prerelease-type": "alpha",
             "prerelease": true,
             "release-type": "node",
-            "component": "@matterlabs/hardhat-zksync-chai-verify-vyper"
+            "component": "@matterlabs/hardhat-zksync-verify-vyper"
         }
     }
 }
